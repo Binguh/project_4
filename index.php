@@ -88,6 +88,8 @@
 				}
 			} elseif ($_GET['action'] === 'goToAdmin') {
 				goToAdmin();
+			} elseif ($_GET['action'] === 'verifyLogin') {
+				verifyLogin($_POST['login'], $_POST['password']);
 			}
 		} else {
 			listPosts();

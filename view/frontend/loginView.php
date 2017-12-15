@@ -6,7 +6,7 @@
 	<div class="bloc_page">
 		<div class="bloc_principal">
 			<div class="formulaire_connexion">
-				<form action="index.php?action=admin" method="post">
+				<form action="index.php?action=verifyLogin" method="post">
 					<div class="input_login">
 						<input type="text" name="login" id="login" placeholder="Identifiant" required>
 					</div>

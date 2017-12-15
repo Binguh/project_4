@@ -109,3 +109,19 @@
 
 		require('view/backend/seePostView.php');
 	}
+
+	function verifyLogin($login, $password) {
+		$loginManager = new LoginManager();
+
+		$loginAndPass = $loginManager->getLogin();
+		$validLogin = $loginAndPass['login'];
+		$validPass = $loginAndPass['password'];
+
+		if ($validLogin === $login && $validPass === $password) {
+			session_start();
+			$_SESSION['login'] = $login;
+			$_SESSION['pass'] = $password;
+		}
+
+		header('Location: index.php?action=admin');
+	}
