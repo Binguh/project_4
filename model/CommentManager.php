@@ -3,8 +3,6 @@
 
 	use \OpenClassrooms\LeBlog\Model\Manager;
 
-	//require_once("model/Manager.php");
-
 	class CommentManager extends Manager {
 		public function getComments($postId) {
 		    $db = $this->dbConnect();

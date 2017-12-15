@@ -113,11 +113,12 @@
 	function verifyLogin($login, $password) {
 		$loginManager = new LoginManager();
 
-		$loginAndPass = $loginManager->getLogin();
-		var_dump($loginAndPass);
-
-		$validLogin = $loginAndPass['login'];
-		$validPass = $loginAndPass['password'];
+		$logins = $loginManager->getLogin();
+		while ($loginAndPass = $logins->fetch()) {
+			var_dump($loginAndPass);
+			$validLogin = $loginAndPass['login'];
+			$validPass = $loginAndPass['password'];
+		}
 
 		if ($validLogin === $login && $validPass === $password) {
 			session_start();
@@ -125,12 +126,12 @@
 			$_SESSION['pass'] = $password;
 
 			header('Location: index.php?action=admin');
-		}
 
-		
+		}		
 	}
 
 	function logout() {
+		session_start();
 		session_unset ();
 		session_destroy ();
 

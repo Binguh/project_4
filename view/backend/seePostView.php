@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <?php $title = 'Jean Forteroche'; ?>
 
 <?php include 'header.php'; ?>
