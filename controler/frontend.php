@@ -1,6 +1,7 @@
 <?php
 	use \OpenClassrooms\LeBlog\Model\PostManager;
 	use \OpenClassrooms\LeBlog\Model\CommentManager;
+	use \OpenClassrooms\LeBlog\Model\LoginManager;
 
 	function listPosts() {
 		$postManager = new PostManager();

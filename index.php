@@ -2,6 +2,7 @@
 	require('model/Manager.php');
 	require('model/PostManager.php');
 	require('model/CommentManager.php');
+	require('model/LoginManager.php');
 	require('controler/frontend.php');
 	require('controler/backend.php');
 
