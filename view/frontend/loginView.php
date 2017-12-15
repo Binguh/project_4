@@ -6,15 +6,15 @@
 	<div class="bloc_page">
 		<div class="bloc_principal">
 			<div class="formulaire_connexion">
-				<form action="index.php?action=addPost" method="post">
-					<div>
-						<input type="text" name="login" id="login" placeholder="Identifiant">
+				<form action="index.php?action=admin" method="post">
+					<div class="input_login">
+						<input type="text" name="login" id="login" placeholder="Identifiant" required>
 					</div>
-					<div>
-						<input type="password" name="password" id="password" placeholder="Mot de passe">
+					<div class="input_login">
+						<input type="password" name="password" id="password" placeholder="Mot de passe" required>
 					</div>
-					<div>
-						<input type="submit" name="connexion" id="connexion">
+					<div class="input_login">
+						<input type="submit" name="connexion" id="connexion" value="Connexion">
 					</div>
 				</form>
 			</div>

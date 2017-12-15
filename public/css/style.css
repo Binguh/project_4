@@ -215,7 +215,7 @@ body {
         background-color: white;
     }
 
-    .ajout_commentaire {
+    .formulaire_connexion, .ajout_commentaire {
         width: 80%;
         margin: 20px auto;
         padding-bottom: 15px; 
@@ -228,7 +228,7 @@ body {
         color: black;
     }
 
-    .modifier_com, .ajout_commentaire input[type="text"], textarea, input[type="submit"] {
+    .formulaire_connexion, .modifier_com, .ajout_commentaire input[type="text"], textarea, input[type="submit"] {
         font-size: 2rem;
         font-family: "walkway_semiboldregular", sans-serif;
         padding: 10px;
@@ -236,26 +236,26 @@ body {
         color: rgb(213, 215, 230);
     }
 
-    .modifier_com, .ajout_commentaire input[type="text"]:focus, textarea:focus {
+    .formulaire_connexion, .modifier_com, .ajout_commentaire input[type="text"]:focus, textarea:focus {
         background-color: rgb(213, 215, 230);
         color: rgb(83, 91, 143);
         border: 1px solid rgb(83, 91, 143)
     }
 
-    .bloc_autheur, .bloc_com, .bloc_bouton {
+    .input_login, .bloc_autheur, .bloc_com, .bloc_bouton {
         margin: 0 auto;
         width: 95%;
         font-family: "walkway_semiboldregular", sans-serif;    
     }
 
-    #title, #content, #update_post, #author, #comment, #post_com {
+    #login, #password, #connexion, #title, #content, #update_post, #author, #comment, #post_com {
         border: 1px solid rgb(213, 215, 230);
         width: 100%;
         padding: 0 -5px 0 5px;
         margin: 10px auto;
     }
 
-    #update_post, #post_com {
+    #connexion, #update_post, #post_com {
         text-align: left;
         width: 50%;
         background-color: rgb(213, 215, 230);
@@ -263,7 +263,7 @@ body {
         border: 1px solid rgb(83, 91, 143);
     }
 
-    #update_post, #post_com:hover {
+    #connexion, #update_post, #post_com:hover {
         cursor: pointer;
         background-color: rgb(83, 91, 143);
         color: rgb(213, 215, 230);
