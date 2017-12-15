@@ -90,6 +90,8 @@
 				goToAdmin();
 			} elseif ($_GET['action'] === 'verifyLogin') {
 				verifyLogin($_POST['login'], $_POST['password']);
+			} elseif ($_GET['action'] === 'logout') {
+				logout();
 			}
 		} else {
 			listPosts();

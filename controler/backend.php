@@ -114,6 +114,8 @@
 		$loginManager = new LoginManager();
 
 		$loginAndPass = $loginManager->getLogin();
+		var_dump($loginAndPass);
+
 		$validLogin = $loginAndPass['login'];
 		$validPass = $loginAndPass['password'];
 
@@ -121,7 +123,16 @@
 			session_start();
 			$_SESSION['login'] = $login;
 			$_SESSION['pass'] = $password;
+
+			header('Location: index.php?action=admin');
 		}
 
-		header('Location: index.php?action=admin');
+		
+	}
+
+	function logout() {
+		session_unset ();
+		session_destroy ();
+
+		header('Location: index.php');
 	}

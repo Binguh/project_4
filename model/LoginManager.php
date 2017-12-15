@@ -8,7 +8,7 @@
 	class LoginManager extends Manager {
 		public function getLogin() { 
 			$db = $this->dbConnect();
-			$req = $db->query('SELECT id, login, password FROM login_&_pass');
+			$req = $db->query('SELECT id, login, password FROM logins');
 
 			return $req;
 		}

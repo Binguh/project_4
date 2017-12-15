@@ -14,7 +14,7 @@
 					<li><a href="index.php?action=admin">Accueil</a></li>
 					<li><a href="index.php?action=goToAddPost">Ajouter un post</a></li>
 					<li><a href="index.php?action=listReportedComments">Commentaires</a></li>
-					<li><a href="index.php">Déconnexion</a></li>
+					<li><a href="index.php?action=logout">Déconnexion</a></li>
 				</ul>
 			</nav>
 		</div>
