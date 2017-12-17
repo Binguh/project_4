@@ -77,7 +77,7 @@
 					<textarea id="comment" name="comment" placeholder="Votre commentaire" required></textarea>
 				</div>
 				<div class="bloc_bouton">
-					<input type="submit" name="" id="post_com" value="Ajouter le commentaire">
+					<input type="submit" name="" id="post_com" value="Envoyer">
 				</div>
 			</form>
 		</div>

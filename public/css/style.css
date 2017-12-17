@@ -337,6 +337,10 @@ body {
             margin-left: -290px;
         }
 
+        #header_accueil_lecteur ul {
+            margin-left: -200px;
+        }
+
         li {
             font-size: 1.9rem;
         }
@@ -359,16 +363,25 @@ body {
             margin-left: 100px;
         }
 
-        .bandeau_menu {
-            height: 40px;
-            margin-bottom: 20px;
+        #header_accueil_lecteur .bandeau_menu {
+            height: 109px;
         }
 
-        ul {
-            margin: -10px 0 0 -250px;
+        #header_accueil_lecteur ul {
+            margin-left: -84px;
+            margin-top: -51px;
+        }
+
+        #header_accueil_admin .bandeau_menu {
+            height: 140px;
+        }
+
+        #header_accueil_admin ul {
+            margin-top: -67px;
+            margin-left: -82px;
         }
 
         li {
-            margin: 5px 10px;
+            display: block;
         }
     }
