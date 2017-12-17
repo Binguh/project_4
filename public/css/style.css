@@ -63,7 +63,7 @@ body {
         position: absolute;
         top: 50%;
         left: 50%;
-        margin: -78px 0 0 -220px;
+        margin: -88px 0 0 -220px;
         background-color: rgba(130, 130, 130, 0.4);     
     }
 
@@ -84,13 +84,10 @@ body {
         margin-bottom: 20px;
     }
 
-    nav {
+    ul {
         position: absolute;
         left: 50%;
         top: 50%;
-    }
-
-    ul {
         list-style: none;
         padding: 0;
         margin: -14px 0 0 -243px;
@@ -129,7 +126,7 @@ body {
     }
 
     .bloc_principal {
-        margin: 0 auto;
+        margin: 20px;
         width: 85%;
     }
     .bloc_widget {
@@ -160,6 +157,19 @@ body {
 
     .reseaux_sociaux {
         color: rgb(43, 121, 75);
+    }
+
+    .reseaux_sociaux p {
+        text-align: center;
+    }
+
+    .reseaux_sociaux a {
+        margin: 15px;
+        color: rgb(50, 59, 115);
+    }
+
+    .reseaux_sociaux a:hover {
+        color: rgb(168, 137, 59);
     }
 
     .titre_et_date p {
@@ -304,4 +314,61 @@ body {
 
     .bloc_footer p {
         text-align: center;
+    }
+
+/* MEDIA */
+
+    @media all and (max-width: 1200px) {
+        .bloc_page, .bloc_header, .bloc_footer {
+            width: 100%;
+        }
+    }
+
+    @media all and (max-width: 900px) {
+        .bloc_widget {
+            display: none;
+        }
+
+        .bloc_principal {
+            margin: 20px auto;
+        }
+
+        #header_accueil_admin ul {
+            margin-left: -290px;
+        }
+
+        li {
+            font-size: 1.9rem;
+        }
+    }
+
+    @media all and (max-width: 600px) {
+        .image_header {
+            height: 400px;
+        }
+
+        .bandeau_header_nom {
+            font-size: 2rem;
+            margin: -79px 0 0 -178px;
+            background-color: rgba(130, 130, 130, 0.4);     
+        }
+
+        .separation {
+            width: 156px;
+            border-top: 2px solid white;
+            margin-left: 100px;
+        }
+
+        .bandeau_menu {
+            height: 40px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            margin: -10px 0 0 -250px;
+        }
+
+        li {
+            margin: 5px 10px;
+        }
     }
