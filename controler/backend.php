@@ -114,25 +114,22 @@
 		$loginManager = new LoginManager();
 
 		$logins = $loginManager->getLogin();
-		while ($loginAndPass = $logins->fetch()) {
-			var_dump($loginAndPass);
-			$validLogin = $loginAndPass['login'];
-			$validPass = $loginAndPass['password'];
-		}
+		$loginAndPass = $logins->fetch();
 
-		if ($validLogin === $login && $validPass === $password) {
+		if ($loginAndPass['login'] != $login && $loginAndPass['password'] != $password) {
+			echo "Identifiant ou mot de passe incorrect";
+		} else {
 			session_start();
 			$_SESSION['login'] = $login;
 			$_SESSION['pass'] = $password;
 
 			header('Location: index.php?action=admin');
-
 		}		
 	}
 
 	function logout() {
 		session_start();
-		session_unset ();
+		$_SESSION = array();
 		session_destroy ();
 
 		header('Location: index.php');
